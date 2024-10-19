@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <label>Select Role:</label>
+        <div class="radio-container">
+            <input type="radio" id="admin" name="role" value="admin">
+            <label for="admin">Admin</label>
+            <input type="radio" id="user" name="role" value="user">
+            <label for="user">User</label>
+        </div><br>
+
+        <label for="login-id">Login:</label>
+        <input type="text" id="login-id" placeholder="Enter login ID"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password"><br>
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="panel admin-panel hidden">
+        <h3>Add Event (Admin only)</h3>
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" placeholder="Enter event name"><br>
+
+        <label for="event-venue">Event Venue:</label>
+        <input type="text" id="event-venue" placeholder="Enter event venue"><br>
+
+        <label for="event-time">Event Time:</label>
+        <input type="text" id="event-time" placeholder="Enter event time"><br>
+
+        <button onclick="addEvent()">Add Event</button>
+    </div>
+
+    <div class="panel events-table-panel">
+        <h3>Events Table</h3>
+        <table id="events-table">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Event Venue</th>
+                    <th>Event Time</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
