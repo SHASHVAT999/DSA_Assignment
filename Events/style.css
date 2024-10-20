@@ -1,0 +1,158 @@
+/* General body styling for dark mode */
+body {
+    background-color: #121212; /* Dark background for body */
+    color: #f1f1f1; /* Light text color */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+    min-height: 100vh; /* Minimum height */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Styling input fields and buttons */
+input, button {
+    background-color: #2a2a2a; /* Dark background for inputs and buttons */
+    color: #ffffff; /* White text color */
+    border: 2px solid transparent; /* Border with no color initially */
+    padding: 12px; /* Padding for inputs/buttons */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between inputs/buttons */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transitions */
+}
+
+/* Input focus effect */
+input:focus {
+    border: 2px solid #6c63ff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button styling */
+button {
+    background-color: #6c63ff; /* Primary button color */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Larger font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #8a80ff; /* Lighter background on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Container for login form and panel sections */
+.login-container, .panel {
+    background-color: #242424; /* Dark background for containers */
+    padding: 40px; /* Padding for containers */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    width: 350px; /* Width for login container */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space between containers */
+}
+
+.panel {
+    width: 420px; /* Wider width for panel */
+}
+
+/* H2 heading styling */
+h2 {
+    margin-bottom: 25px; /* Space below heading */
+    font-size: 28px; /* Size of heading */
+    font-weight: 600; /* Medium weight */
+    color: #ffffff; /* White text color */
+}
+
+/* Sub-heading for panels */
+h3 {
+    margin-bottom: 15px; /* Space below subheading */
+    font-size: 22px; /* Size of subheading */
+    color: #6c63ff; /* Light purple color */
+}
+
+/* Ensure table stays inside the container */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scroll for tables */
+    max-width: 100%; /* Maximum width */
+}
+
+/* Ensure table fits inside the panel */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Merge table borders */
+    border: 1px solid #3a3a3a; /* Dark border for table */
+}
+
+th, td {
+    padding: 15px; /* Padding for cells */
+    text-align: center; /* Center text in cells */
+    border: 1px solid #3a3a3a; /* Border for cells */
+}
+
+th {
+    background-color: #3f3d56; /* Header background color */
+    color: #f1f1f1; /* Light text for header */
+    text-transform: uppercase; /* Uppercase for header */
+}
+
+td {
+    background-color: #2a2a2a; /* Cell background color */
+    color: #ffffff; /* White text color */
+}
+
+/* Alternating row colors for table */
+tr:nth-child(even) td {
+    background-color: #343434; /* Darker color for even rows */
+}
+
+/* Highlight table header */
+.panel h3 {
+    color: #8a80ff; /* Lighter purple for highlighted header */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase for header */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+/* Styling for role selection (radio buttons) */
+.radio-container {
+    display: flex; /* Flex layout for radio buttons */
+    justify-content: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Space below radio buttons */
+}
+
+.radio-container label {
+    margin-left: 10px; /* Space before label */
+    margin-right: 30px; /* Space after label */
+    color: #ffffff; /* White text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="radio"] {
+    accent-color: #6c63ff; /* Color for radio buttons */
+    margin-right: 3px; /* Space between radio button and label */
+    margin-bottom: 5px; /* Space below radio buttons */
+}
+
+/* Login and panel sections visibility */
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+/* Minimal effect on hover for interactive elements */
+button:hover, input[type="radio"]:hover {
+    background-color: #8a80ff; /* Change background on hover */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 600px) {
+    .login-container, .panel {
+        width: 90%; /* Full width on small devices */
+    }
+}

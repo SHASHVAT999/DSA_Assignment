@@ -24,12 +24,17 @@
         <input type="password" id="password" placeholder="Enter password"><br>
 
         <button onclick="login()">Login</button>
+
+
     </div>
 
     <div class="panel admin-panel hidden">
         <h3>Add Event (Admin only)</h3>
         <label for="event-name">Event Name:</label>
         <input type="text" id="event-name" placeholder="Enter event name"><br>
+
+        <label for="event-date">Event Time:</label>
+        <input type="date" id="event-date" placeholder="Enter event date"><br>
 
         <label for="event-venue">Event Venue:</label>
         <input type="text" id="event-venue" placeholder="Enter event venue"><br>
@@ -40,14 +45,16 @@
         <button onclick="addEvent()">Add Event</button>
     </div>
 
-    <div class="panel events-table-panel">
+    <div id="user-panel" class="panel events-table-panel hidden">
         <h3>Events Table</h3>
         <table id="events-table">
             <thead>
                 <tr>
                     <th>Event Name</th>
+                    <th>Event Date</th>
                     <th>Event Venue</th>
                     <th>Event Time</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
